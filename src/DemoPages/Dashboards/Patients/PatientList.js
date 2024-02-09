@@ -3,8 +3,6 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import DoctorImge from "../../../assets/utils/images/medical/doct.png";
 import PageTitle from "../../../Layout/AppMain/PageTitle";
 import axios from "axios";
-const Constants = require("../../../config/seturl");
-var apiBaseUrl = Constants.getAPiUrl();
 import {
   Input,
   Row,
@@ -20,6 +18,8 @@ import avatar2 from "../../../assets/utils/images/avatars/2.jpg";
 
 import PopoversExample from "../../Components/TooltipsPopovers";
 
+const Constants = require("../../../config/seturl");
+var apiBaseUrl = Constants.getAPiUrl();
 export default class PatientList extends Component {
   constructor(props) {
     super(props);
